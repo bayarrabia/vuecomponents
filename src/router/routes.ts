@@ -12,6 +12,8 @@ const routes: RouteRecordRaw[] = [
       { path: 'ode', component: () => import('components/ThePayment.vue') },
       { path: 'filter', component: () => import('components/TheFilter.vue') },
       { path: 'compare', component: () => import('pages/ProductComparePage.vue') },
+      { path: 'page1', component: () => import('components/ThePage1.vue') },
+      { path: 'page2', component: () => import('components/ThePage2.vue') },
   ],
   },
 
