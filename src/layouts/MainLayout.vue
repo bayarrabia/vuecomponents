@@ -103,6 +103,12 @@ const linksList = [
     caption: 'Community Quasar projects',
     icon: 'favorite',
     link: '/page2'
+  },
+  {
+    title: 'Comp-3',
+    caption: 'Community Quasar projects',
+    icon: 'favorite',
+    link: '/page3'
   }
 ];
 
