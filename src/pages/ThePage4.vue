@@ -6,5 +6,5 @@
 </template>
 
 <script setup lang="ts">
-import ProductList from 'components/ThePage4.vue';
+import ProductList from 'components/TheComp4.vue';
 </script>

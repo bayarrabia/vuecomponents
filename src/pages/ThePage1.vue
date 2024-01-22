@@ -6,5 +6,5 @@
 </template>
 
 <script setup lang="ts">
-import ThePage1 from 'components/ThePage1.vue';
+import ThePage1 from 'components/TheComp1.vue';
 </script>
