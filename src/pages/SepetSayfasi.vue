@@ -2,18 +2,18 @@
   <q-page>
     <!-- Sayfa içeriği -->
     <TheSepet ref="sepetComponent"></TheSepet>
-
-    <!-- Kullanıcı bir eylem gerçekleştirdiğinde (örneğin bir butona tıkladığında) -->
-    <q-btn @click="showSepet">Sepeti Göster</q-btn>
   </q-page>
 </template>
-
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 import TheSepet from 'components/TheSepet.vue';
 
 export default defineComponent({
+  mounted() {
+    // Sayfa yüklendiğinde sepeti göster
+    this.showSepet();
+  },
   methods: {
     showSepet() {
       // TheSepet.vue componentini çağır
@@ -25,6 +25,3 @@ export default defineComponent({
   },
 });
 </script>
-
-  
-  
