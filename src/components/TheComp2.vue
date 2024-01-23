@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <q-page-sticky style="position: fixed">
+    <q-page-sticky position="top" :offset="0" >
       <q-header
         elevated
         style="background-color: white; color: black; width: 100vw; height: 9vh"
@@ -39,10 +39,50 @@
               flat
               dense
               round
-              color="black"
               icon="account_circle"
               size="17px"
-            />
+            >
+              <q-popup-proxy>
+                <div style="display: flex; flex-direction: column; width: 200px; height: 200px;">
+                  <q-banner style="text-align: center;">
+                    HOŞGELDİNİZ
+                  
+                  </q-banner>
+
+                  <q-btn style="background-color: blue;"
+                    flat
+                    text-color="white"
+                    color="primary"
+                    label="Üye GİRİŞİ"
+                    class="popup-btn"
+                  />
+                  <q-banner style="text-align: center;">
+                    Üye Değil misiniz?
+                  
+                  </q-banner>
+                  <q-btn
+                    flat
+                    text-color="black"
+                    color="positive"
+                    label="Üye Ol"
+                    class="popup-btn"
+                  />
+                </div>
+              </q-popup-proxy>
+            </q-btn>
+
+
+
+
+
+            
+
+
+
+            
+
+
+
             <q-btn
               flat
               dense

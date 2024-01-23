@@ -1,6 +1,6 @@
 <template>
   <div class="komple">
-    <p id="baslik">EN ÇOK SATANLAR</p>
+    <p id="baslik">En Yeni Ürünler</p>
     <div class="product-list">
       <div v-for="product in products" :key="product.id" class="product">
         <img :src="product.image" />
@@ -24,30 +24,30 @@ export default defineComponent({
     const products = ref<Product[]>([
       {
         id: 1,
-        name: 'HP Smart Tank 515 Fotokopi Tarayıcı Wi - Fi Mürekkep ',
-        name2: 'Püskürtmeli Tanklı Yazıcı 1TJ09A',
-        name3: '         .        ',
-        price: '5.299,00',
+        name: 'HP Victus Laptop 16-R1033NT Intel Core i7-14700HX ',
+        name2: '32GB RAM 1TB SSD 8GB NVIDIA GeForce RTX4060 ',
+        name3: '16.1 inç FHD 144Hz FreeDOS Mavi 9J235EA.        ',
+        price: '51.499,00',
         image:
-          'https://www.hpstore.com.tr/hp-smart-tank-wireless-…p-puskurtmeli-tankli-yazici-1tj09a-12362-63-K.jpg',
+          'https://www.hpstore.com.tr/hp-victus-laptop-16-r1033nt-intel-core-i7-14700hx-32gb-ram-1tb-ssd-nvidia-geforce-rtx4060-161-inc-fhd-144hz-freedos-mavi-9j235ea-14640-18-K.jpg',
       },
       {
         id: 2,
-        name: 'HP Victus Laptop 16 - S0021NT - AMD Ryzen 7 - 7840HS  ',
-        name2: '16GB RAM 512GB SSD NVIDIA GeForce RTX 4050 6GB 16.1',
-        name3: 'inç FHD 144Hz FreeDOS Mika Gümüş 7Z4N0EA',
-        price: '36.699,00',
+        name: 'HP OMEN Laptop 16-WF1013NT Intel Core i9-14900HX  ',
+        name2: '32GB RAM 2TB SSD 8GB NVIDIA GeForce RTX4070',
+        name3: '16.1 inç QHD 240Hz FreeDOS Siyah 9J1L7EA ',
+        price: '88.499,00',
         image:
-          'https://www.hpstore.com.tr/hp-victus-laptop-16-s00…nc-fhd-144hz-freedos-gumus-7z4n0ea-13616-17-K.jpg',
+          'https://www.hpstore.com.tr/hp-omen-laptop-16-wf1013nt-intel-core-i9-14900hx-32gb-ram-2tb-ssd-161-inc-qhd-nvidia-geforce-rtx4070-freedos-9j1l7ea-14714-18-K.jpg',
       },
       {
         id: 3,
-        name: 'Orijinal HP 305 XL Mürekkep Kartuşu Siyah 3YM62AE',
-        name2: '         .        ',
-        name3: '         .        ',
-        price: '859,90',
+        name: 'HP Victus Laptop 16-R1050NT Intel Core  ',
+        name2: 'i7-14700HX 16GB RAM 1TB SSD 6GB NVIDIA GeForce RTX4050',
+        name3: '16.1 inç FHD 144Hz FreeDOS Mika Gümüşü 9J252EA',
+        price: '46.999,90',
         image:
-          'https://www.hpstore.com.tr/hp-305xl-siyah-murekkep-kartusu-3ym62ae-3342-75-K.jpg',
+          'https://www.hpstore.com.tr/hp-victus-laptop-16-r1050nt-intel-core-i7-14700hx-16gb-ram-1tb-ssd-nvidia-geforce-rtx4050-161-inc-fhd-144hz-freedos-mika-gumusu-9j252ea-14647-18-K.jpg',
       },
     ]);
 
@@ -60,7 +60,7 @@ export default defineComponent({
 
 <style scoped>
 .komple {
-  margin-top: -250px;
+  margin-top: -450px;
 }
 
 #baslik {

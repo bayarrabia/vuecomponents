@@ -24,12 +24,13 @@ export default defineComponent({
     const products = ref<Product[]>([
       {
         id: 1,
-        name: 'HP Smart Tank 515 Fotokopi Tarayıcı Wi - Fi Mürekkep ',
-        name2: 'Püskürtmeli Tanklı Yazıcı 1TJ09A',
-        name3: '         .        ',
-        price: '5.299,00',
+        name: 'HP OMEN Laptop 17-CM2005NT i7-13700HX  ',
+        name2: '16GB RAM 1TB SSD 8GB GeForce RTX 4060',
+        name3: '17.3 inç QHD FreeDOS Siyah 7P6D8EA',
+        price: '5.999,00',
         image:
-          'https://www.hpstore.com.tr/hp-smart-tank-wireless-…p-puskurtmeli-tankli-yazici-1tj09a-12362-63-K.jpg',
+          'https://www.hpstore.com.tr/hp-omen-laptop-17-cm2005nt-i7-13700hx-16gb-ram-1tb-ssd-8gb-geforce-rtx-4060-173-inc-qhd-freedos-siyah-7p6d8ea-14430-17-K.jpg',
+      
       },
       {
         id: 2,
@@ -42,13 +43,14 @@ export default defineComponent({
       },
       {
         id: 3,
-        name: 'Orijinal HP 305 XL Mürekkep Kartuşu Siyah 3YM62AE',
-        name2: '         .        ',
-        name3: '         .        ',
-        price: '859,90',
+        name: 'HP Victus Laptop 16 - S0021NT - AMD Ryzen 7 - 7840HS  ',
+        name2: '16GB RAM 512GB SSD NVIDIA GeForce RTX 4050 6GB 16.1',
+        name3: 'inç FHD 144Hz FreeDOS Mika Gümüş 7Z4N0EA',
+        price: '36.699,00',
         image:
-          'https://www.hpstore.com.tr/hp-305xl-siyah-murekkep-kartusu-3ym62ae-3342-75-K.jpg',
+          'https://www.hpstore.com.tr/hp-victus-laptop-16-s00…nc-fhd-144hz-freedos-gumus-7z4n0ea-13616-17-K.jpg',
       },
+   
     ]);
 
     return {
@@ -60,7 +62,7 @@ export default defineComponent({
 
 <style scoped>
 .komple {
-  margin-top: -250px;
+ 
 }
 
 #baslik {
