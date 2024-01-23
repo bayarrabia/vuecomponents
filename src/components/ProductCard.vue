@@ -5,7 +5,7 @@
       <p class="product-subtitle">{{ product.description }}</p>
     </q-card-section>
     <q-card-section class="product-image-section">
-      <img :src="product.image" alt="Product Image" class="product-image">
+      <img :src="product.image" alt="Product Image" class="product-image" />
     </q-card-section>
     <q-card-section class="buy-now-section">
       <q-btn color="black" label="Satın Al" @click.stop="buyNow" />
@@ -14,7 +14,7 @@
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue';
+import { defineComponent } from 'vue';
 
 interface Product {
   name: string;
@@ -43,11 +43,11 @@ export default defineComponent({
 
 <style scoped>
 .product-card {
-  max-width: 300px;
-  margin: 10px;
+  max-width: 450px;
+  margin-right: 20px;
   background-color: #f5f5f5;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 0px;
   display: flex;
   flex-direction: column;
 }
@@ -74,8 +74,6 @@ export default defineComponent({
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .buy-now-section {
