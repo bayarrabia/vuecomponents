@@ -1,6 +1,7 @@
 <template>
   <q-page>
     <TheComp1></TheComp1>
+    <TheComp2></TheComp2>
   </q-page>
 </template>
 
