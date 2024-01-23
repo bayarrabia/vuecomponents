@@ -1,22 +1,24 @@
 <template>
-  <p id="baslik">EN ÇOK SATANLAR </p>
-  <div class="product-list">
-    <div v-for="product in products" :key="product.id" class="product">
-      <img :src="product.image"/>
-      <p class="name">{{ product.name }}</p>
-      <p class="name2">{{ product.name2 }}</p>
-      <p class="name3">{{ product.name3 }}</p> 
-      <p class="price">{{ product.price }} TL</p>
-      <button class="buton">Ürünü İncele</button>
+  <div class="komple">
+    <p id="baslik">EN ÇOK SATANLAR</p>
+    <div class="product-list">
+      <div v-for="product in products" :key="product.id" class="product">
+        <img :src="product.image" />
+        <p class="name">{{ product.name }}</p>
+        <p class="name2">{{ product.name2 }}</p>
+        <p class="name3">{{ product.name3 }}</p>
+        <p class="price">{{ product.price }} TL</p>
+        <button class="buton">Ürünü İncele</button>
+      </div>
     </div>
-  </div> 
-</template> 
+  </div>
+</template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { Product } from '../components/product'; 
+import { Product } from '../components/product';
 
-export default defineComponent({ 
+export default defineComponent({
   name: 'ProductList',
   setup() {
     const products = ref<Product[]>([
@@ -24,25 +26,28 @@ export default defineComponent({
         id: 1,
         name: 'HP Smart Tank 515 Fotokopi Tarayıcı Wi - Fi Mürekkep ',
         name2: 'Püskürtmeli Tanklı Yazıcı 1TJ09A',
-        name3: '         .        ',  
+        name3: '         .        ',
         price: '5.299,00',
-        image: 'https://www.hpstore.com.tr/hp-smart-tank-wireless-…p-puskurtmeli-tankli-yazici-1tj09a-12362-63-K.jpg',
+        image:
+          'https://www.hpstore.com.tr/hp-smart-tank-wireless-…p-puskurtmeli-tankli-yazici-1tj09a-12362-63-K.jpg',
       },
       {
         id: 2,
         name: 'HP Victus Laptop 16 - S0021NT - AMD Ryzen 7 - 7840HS  ',
         name2: '16GB RAM 512GB SSD NVIDIA GeForce RTX 4050 6GB 16.1',
-        name3: 'inç FHD 144Hz FreeDOS Mika Gümüş 7Z4N0EA', 
+        name3: 'inç FHD 144Hz FreeDOS Mika Gümüş 7Z4N0EA',
         price: '36.699,00',
-        image: 'https://www.hpstore.com.tr/hp-victus-laptop-16-s00…nc-fhd-144hz-freedos-gumus-7z4n0ea-13616-17-K.jpg',
+        image:
+          'https://www.hpstore.com.tr/hp-victus-laptop-16-s00…nc-fhd-144hz-freedos-gumus-7z4n0ea-13616-17-K.jpg',
       },
       {
         id: 3,
         name: 'Orijinal HP 305 XL Mürekkep Kartuşu Siyah 3YM62AE',
         name2: '         .        ',
-        name3: '         .        ',  
+        name3: '         .        ',
         price: '859,90',
-        image: 'https://www.hpstore.com.tr/hp-305xl-siyah-murekkep-kartusu-3ym62ae-3342-75-K.jpg',
+        image:
+          'https://www.hpstore.com.tr/hp-305xl-siyah-murekkep-kartusu-3ym62ae-3342-75-K.jpg',
       },
     ]);
 
@@ -53,8 +58,11 @@ export default defineComponent({
 });
 </script>
 
-
 <style scoped>
+.komple {
+  margin-top: -250px;
+}
+
 #baslik {
   text-align: center;
   font-size: 24px;
@@ -86,7 +94,9 @@ export default defineComponent({
   padding-bottom: 10px;
 }
 
-.name,.name2,.name3 {
+.name,
+.name2,
+.name3 {
   font-size: 16px;
   font-weight: bold;
   color: #2c3038;
