@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <q-page-sticky style="position: fixed; margin-top: -300px">
+    <q-page-sticky style="position: fixed">
       <q-header
         elevated
         style="background-color: white; color: black; width: 100vw; height: 9vh"
